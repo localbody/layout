@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+
+        body {
+            color: white;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+        .block {
+            overflow: hidden;
+            font-size: 3rem;
+            line-height: 5rem;
+        }
+
+        .wfull {
+            width: 100%;
+            background-color:deeppink;
+        }
+
+        .w1920 {
+            width: 1920px;
+            background-color: darkorange;
+        }
+
+        .w1440 {
+            width: 1440px;
+            background-color: darkgreen;
+        }
+
+        .w1280 {
+            width: 1280px;
+            background-color: red;
+        }
+
+        .w1024 {
+            width: 1024px;
+            background-color: blue;
+        }
+
+        .w768 {
+            width: 768px;
+            background-color: blueviolet;
+        }
+
+        .w640 {
+            width: 640px;
+            background-color: brown;
+        }
+
+        .w480 {
+            width: 480px;
+            background-color: cadetblue;
+        }
+
+        .w320 {
+            width: 320px;
+            background-color: crimson;
+        }
+
+        .items {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .item {
+            /* width: 2vw;
+            height: 2vh; */
+            background-color: black;
+            /* border: 1px solid white;
+            margin: 1px; */
+            color: white;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 1vw;
+        }
+
+    </style>
+
+    <div class="wrapper">
+        
+        <div class="block wfull">FULL
+            <div class="items">
+                <div class="item">00</div>
+                <div class="item">01</div>
+                <div class="item">02</div>
+                <div class="item">03</div>
+                <div class="item">04</div>
+                <div class="item">05</div>
+                <div class="item">06</div>
+                <div class="item">07</div>
+                <div class="item">08</div>
+                <div class="item">09</div>
+
+                <div class="item">10</div>
+                <div class="item">11</div>
+                <div class="item">12</div>
+                <div class="item">13</div>
+                <div class="item">14</div>
+                <div class="item">15</div>
+                <div class="item">16</div>
+                <div class="item">17</div>
+                <div class="item">18</div>
+                <div class="item">19</div>
+
+                <div class="item">20</div>
+                <div class="item">21</div>
+                <div class="item">22</div>
+                <div class="item">23</div>
+                <div class="item">24</div>
+                <div class="item">25</div>
+                <div class="item">26</div>
+                <div class="item">27</div>
+                <div class="item">28</div>
+                <div class="item">29</div>
+
+                <div class="item">30</div>
+                <div class="item">31</div>
+                <div class="item">32</div>
+                <div class="item">33</div>
+                <div class="item">34</div>
+                <div class="item">35</div>
+                <div class="item">36</div>
+                <div class="item">37</div>
+                <div class="item">38</div>
+                <div class="item">39</div>
+
+                <div class="item">40</div>
+                <div class="item">41</div>
+                <div class="item">42</div>
+                <div class="item">43</div>
+                <div class="item">44</div>
+                <div class="item">45</div>
+                <div class="item">46</div>
+                <div class="item">47</div>
+                <div class="item">48</div>
+                <div class="item">49</div>
+            </div>
+        </div>
+
+        <div class="block w1920">1920
+            <div class="items">
+                <div class="item">00</div>
+                <div class="item">01</div>
+                <div class="item">02</div>
+                <div class="item">03</div>
+                <div class="item">04</div>
+                <div class="item">05</div>
+                <div class="item">06</div>
+                <div class="item">07</div>
+                <div class="item">08</div>
+                <div class="item">09</div>
+
+                <div class="item">10</div>
+                <div class="item">11</div>
+                <div class="item">12</div>
+                <div class="item">13</div>
+                <div class="item">14</div>
+                <div class="item">15</div>
+                <div class="item">16</div>
+                <div class="item">17</div>
+                <div class="item">18</div>
+                <div class="item">19</div>
+
+                <div class="item">20</div>
+                <div class="item">21</div>
+                <div class="item">22</div>
+                <div class="item">23</div>
+                <div class="item">24</div>
+                <div class="item">25</div>
+                <div class="item">26</div>
+                <div class="item">27</div>
+                <div class="item">28</div>
+                <div class="item">29</div>
+
+                <div class="item">30</div>
+                <div class="item">31</div>
+                <div class="item">32</div>
+                <div class="item">33</div>
+                <div class="item">34</div>
+                <div class="item">35</div>
+                <div class="item">36</div>
+                <div class="item">37</div>
+                <div class="item">38</div>
+                <div class="item">39</div>
+
+                <div class="item">40</div>
+                <div class="item">41</div>
+                <div class="item">42</div>
+                <div class="item">43</div>
+                <div class="item">44</div>
+                <div class="item">45</div>
+                <div class="item">46</div>
+                <div class="item">47</div>
+                <div class="item">48</div>
+                <div class="item">49</div>
+            </div>
+
+
+        </div>
+
+        <div class="block w1440">1440
+            <div class="items">
+                <div class="item">00</div>
+                <div class="item">01</div>
+                <div class="item">02</div>
+                <div class="item">03</div>
+                <div class="item">04</div>
+                <div class="item">05</div>
+                <div class="item">06</div>
+                <div class="item">07</div>
+                <div class="item">08</div>
+                <div class="item">09</div>
+
+                <div class="item">10</div>
+                <div class="item">11</div>
+                <div class="item">12</div>
+                <div class="item">13</div>
+                <div class="item">14</div>
+                <div class="item">15</div>
+                <div class="item">16</div>
+                <div class="item">17</div>
+                <div class="item">18</div>
+                <div class="item">19</div>
+
+                <div class="item">20</div>
+                <div class="item">21</div>
+                <div class="item">22</div>
+                <div class="item">23</div>
+                <div class="item">24</div>
+                <div class="item">25</div>
+                <div class="item">26</div>
+                <div class="item">27</div>
+                <div class="item">28</div>
+                <div class="item">29</div>
+
+                <div class="item">30</div>
+                <div class="item">31</div>
+                <div class="item">32</div>
+                <div class="item">33</div>
+                <div class="item">34</div>
+                <div class="item">35</div>
+                <div class="item">36</div>
+                <div class="item">37</div>
+                <div class="item">38</div>
+                <div class="item">39</div>
+
+                <div class="item">40</div>
+                <div class="item">41</div>
+                <div class="item">42</div>
+                <div class="item">43</div>
+                <div class="item">44</div>
+                <div class="item">45</div>
+                <div class="item">46</div>
+                <div class="item">47</div>
+                <div class="item">48</div>
+                <div class="item">49</div>
+            </div>
+
+        </div>
+
+        <div class="block w1280">1280
+            <div class="items">
+                <div class="item">00</div>
+                <div class="item">01</div>
+                <div class="item">02</div>
+                <div class="item">03</div>
+                <div class="item">04</div>
+                <div class="item">05</div>
+                <div class="item">06</div>
+                <div class="item">07</div>
+                <div class="item">08</div>
+                <div class="item">09</div>
+
+                <div class="item">10</div>
+                <div class="item">11</div>
+                <div class="item">12</div>
+                <div class="item">13</div>
+                <div class="item">14</div>
+                <div class="item">15</div>
+                <div class="item">16</div>
+                <div class="item">17</div>
+                <div class="item">18</div>
+                <div class="item">19</div>
+
+                <div class="item">20</div>
+                <div class="item">21</div>
+                <div class="item">22</div>
+                <div class="item">23</div>
+                <div class="item">24</div>
+                <div class="item">25</div>
+                <div class="item">26</div>
+                <div class="item">27</div>
+                <div class="item">28</div>
+                <div class="item">29</div>
+
+                <div class="item">30</div>
+                <div class="item">31</div>
+                <div class="item">32</div>
+                <div class="item">33</div>
+                <div class="item">34</div>
+                <div class="item">35</div>
+                <div class="item">36</div>
+                <div class="item">37</div>
+                <div class="item">38</div>
+                <div class="item">39</div>
+
+                <div class="item">40</div>
+                <div class="item">41</div>
+                <div class="item">42</div>
+                <div class="item">43</div>
+                <div class="item">44</div>
+                <div class="item">45</div>
+                <div class="item">46</div>
+                <div class="item">47</div>
+                <div class="item">48</div>
+                <div class="item">49</div>
+            </div>
+
+        </div>
+
+        <div class="block w1024">1024
+            <div class="items">
+                <div class="item">00</div>
+                <div class="item">01</div>
+                <div class="item">02</div>
+                <div class="item">03</div>
+                <div class="item">04</div>
+                <div class="item">05</div>
+                <div class="item">06</div>
+                <div class="item">07</div>
+                <div class="item">08</div>
+                <div class="item">09</div>
+
+                <div class="item">10</div>
+                <div class="item">11</div>
+                <div class="item">12</div>
+                <div class="item">13</div>
+                <div class="item">14</div>
+                <div class="item">15</div>
+                <div class="item">16</div>
+                <div class="item">17</div>
+                <div class="item">18</div>
+                <div class="item">19</div>
+
+                <div class="item">20</div>
+                <div class="item">21</div>
+                <div class="item">22</div>
+                <div class="item">23</div>
+                <div class="item">24</div>
+                <div class="item">25</div>
+                <div class="item">26</div>
+                <div class="item">27</div>
+                <div class="item">28</div>
+                <div class="item">29</div>
+
+                <div class="item">30</div>
+                <div class="item">31</div>
+                <div class="item">32</div>
+                <div class="item">33</div>
+                <div class="item">34</div>
+                <div class="item">35</div>
+                <div class="item">36</div>
+                <div class="item">37</div>
+                <div class="item">38</div>
+                <div class="item">39</div>
+
+                <div class="item">40</div>
+                <div class="item">41</div>
+                <div class="item">42</div>
+                <div class="item">43</div>
+                <div class="item">44</div>
+                <div class="item">45</div>
+                <div class="item">46</div>
+                <div class="item">47</div>
+                <div class="item">48</div>
+                <div class="item">49</div>
+            </div>
+        </div>
+
+        <div class="block w768">768
+            <div class="items">
+                <div class="item">00</div>
+                <div class="item">01</div>
+                <div class="item">02</div>
+                <div class="item">03</div>
+                <div class="item">04</div>
+                <div class="item">05</div>
+                <div class="item">06</div>
+                <div class="item">07</div>
+                <div class="item">08</div>
+                <div class="item">09</div>
+
+                <div class="item">10</div>
+                <div class="item">11</div>
+                <div class="item">12</div>
+                <div class="item">13</div>
+                <div class="item">14</div>
+                <div class="item">15</div>
+                <div class="item">16</div>
+                <div class="item">17</div>
+                <div class="item">18</div>
+                <div class="item">19</div>
+
+                <div class="item">20</div>
+                <div class="item">21</div>
+                <div class="item">22</div>
+                <div class="item">23</div>
+                <div class="item">24</div>
+                <div class="item">25</div>
+                <div class="item">26</div>
+                <div class="item">27</div>
+                <div class="item">28</div>
+                <div class="item">29</div>
+
+                <div class="item">30</div>
+                <div class="item">31</div>
+                <div class="item">32</div>
+                <div class="item">33</div>
+                <div class="item">34</div>
+                <div class="item">35</div>
+                <div class="item">36</div>
+                <div class="item">37</div>
+                <div class="item">38</div>
+                <div class="item">39</div>
+
+                <div class="item">40</div>
+                <div class="item">41</div>
+                <div class="item">42</div>
+                <div class="item">43</div>
+                <div class="item">44</div>
+                <div class="item">45</div>
+                <div class="item">46</div>
+                <div class="item">47</div>
+                <div class="item">48</div>
+                <div class="item">49</div>
+            </div>
+        </div>
+
+        <div class="block w640">640
+            <div class="items">
+                <div class="item">00</div>
+                <div class="item">01</div>
+                <div class="item">02</div>
+                <div class="item">03</div>
+                <div class="item">04</div>
+                <div class="item">05</div>
+                <div class="item">06</div>
+                <div class="item">07</div>
+                <div class="item">08</div>
+                <div class="item">09</div>
+
+                <div class="item">10</div>
+                <div class="item">11</div>
+                <div class="item">12</div>
+                <div class="item">13</div>
+                <div class="item">14</div>
+                <div class="item">15</div>
+                <div class="item">16</div>
+                <div class="item">17</div>
+                <div class="item">18</div>
+                <div class="item">19</div>
+
+                <div class="item">20</div>
+                <div class="item">21</div>
+                <div class="item">22</div>
+                <div class="item">23</div>
+                <div class="item">24</div>
+                <div class="item">25</div>
+                <div class="item">26</div>
+                <div class="item">27</div>
+                <div class="item">28</div>
+                <div class="item">29</div>
+
+                <div class="item">30</div>
+                <div class="item">31</div>
+                <div class="item">32</div>
+                <div class="item">33</div>
+                <div class="item">34</div>
+                <div class="item">35</div>
+                <div class="item">36</div>
+                <div class="item">37</div>
+                <div class="item">38</div>
+                <div class="item">39</div>
+
+                <div class="item">40</div>
+                <div class="item">41</div>
+                <div class="item">42</div>
+                <div class="item">43</div>
+                <div class="item">44</div>
+                <div class="item">45</div>
+                <div class="item">46</div>
+                <div class="item">47</div>
+                <div class="item">48</div>
+                <div class="item">49</div>
+            </div>
+        </div>
+
+        <div class="block w480">480
+            <div class="items">
+                <div class="item">00</div>
+                <div class="item">01</div>
+                <div class="item">02</div>
+                <div class="item">03</div>
+                <div class="item">04</div>
+                <div class="item">05</div>
+                <div class="item">06</div>
+                <div class="item">07</div>
+                <div class="item">08</div>
+                <div class="item">09</div>
+
+                <div class="item">10</div>
+                <div class="item">11</div>
+                <div class="item">12</div>
+                <div class="item">13</div>
+                <div class="item">14</div>
+                <div class="item">15</div>
+                <div class="item">16</div>
+                <div class="item">17</div>
+                <div class="item">18</div>
+                <div class="item">19</div>
+
+                <div class="item">20</div>
+                <div class="item">21</div>
+                <div class="item">22</div>
+                <div class="item">23</div>
+                <div class="item">24</div>
+                <div class="item">25</div>
+                <div class="item">26</div>
+                <div class="item">27</div>
+                <div class="item">28</div>
+                <div class="item">29</div>
+
+                <div class="item">30</div>
+                <div class="item">31</div>
+                <div class="item">32</div>
+                <div class="item">33</div>
+                <div class="item">34</div>
+                <div class="item">35</div>
+                <div class="item">36</div>
+                <div class="item">37</div>
+                <div class="item">38</div>
+                <div class="item">39</div>
+
+                <div class="item">40</div>
+                <div class="item">41</div>
+                <div class="item">42</div>
+                <div class="item">43</div>
+                <div class="item">44</div>
+                <div class="item">45</div>
+                <div class="item">46</div>
+                <div class="item">47</div>
+                <div class="item">48</div>
+                <div class="item">49</div>
+            </div>
+        </div>
+
+        <div class="block w320">320
+            <div class="items">
+                <div class="item">00</div>
+                <div class="item">01</div>
+                <div class="item">02</div>
+                <div class="item">03</div>
+                <div class="item">04</div>
+                <div class="item">05</div>
+                <div class="item">06</div>
+                <div class="item">07</div>
+                <div class="item">08</div>
+                <div class="item">09</div>
+
+                <div class="item">10</div>
+                <div class="item">11</div>
+                <div class="item">12</div>
+                <div class="item">13</div>
+                <div class="item">14</div>
+                <div class="item">15</div>
+                <div class="item">16</div>
+                <div class="item">17</div>
+                <div class="item">18</div>
+                <div class="item">19</div>
+
+                <div class="item">20</div>
+                <div class="item">21</div>
+                <div class="item">22</div>
+                <div class="item">23</div>
+                <div class="item">24</div>
+                <div class="item">25</div>
+                <div class="item">26</div>
+                <div class="item">27</div>
+                <div class="item">28</div>
+                <div class="item">29</div>
+
+                <div class="item">30</div>
+                <div class="item">31</div>
+                <div class="item">32</div>
+                <div class="item">33</div>
+                <div class="item">34</div>
+                <div class="item">35</div>
+                <div class="item">36</div>
+                <div class="item">37</div>
+                <div class="item">38</div>
+                <div class="item">39</div>
+
+                <div class="item">40</div>
+                <div class="item">41</div>
+                <div class="item">42</div>
+                <div class="item">43</div>
+                <div class="item">44</div>
+                <div class="item">45</div>
+                <div class="item">46</div>
+                <div class="item">47</div>
+                <div class="item">48</div>
+                <div class="item">49</div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+  </body>
+</html>
