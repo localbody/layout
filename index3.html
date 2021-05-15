@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-size: 2em;
+            line-height: 3em;
+            color:black;
+        }
+
+        .section {}
+
+        .container {
+            max-width: 1400px; 
+
+            background-color: lightgreen;
+
+            margin: 0 auto;
+        }
+
+        .container--fluid {
+            max-width: 100%;
+
+            background-color: green;
+
+            margin: 0 auto;
+        }
+
+
+        /* @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        } */
+
+        .bg--red {
+            background-color: red;
+        }
+
+        .bg--blue {
+            background-color: blue;
+        }
+
+        .bg--yellow {
+            background-color: yellow;
+        }
+
+        .bg-orange {
+            background-color: orange;
+        }
+
+        .bg-tomato {
+            background-color: tomato;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .w1440 {
+            width: 1440px;
+            flex-shrink: 0;
+        }
+
+    </style>
+
+    <div class="section bg--blue">
+
+        <div class="container">
+            1
+        </div>
+
+    </div>
+
+    <div class="section bg--red">
+
+        <div class="container--fluid flex">
+            <div class="left bg-orange">
+                <div>left</div>    
+            </div>
+            <div class="container w1440 bg-tomato">2</div>
+            <div class="right bg-orange">
+                <div>right right</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section bg--yellow">
+
+        <div class="container">
+            3
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

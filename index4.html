@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+
+            font-size: 3em;
+            line-height: 5em;
+
+            color: white;
+        }
+
+        .section {
+            /* overflow: hidden; */
+        }
+
+        .section:nth-child(even) {
+            background-color: red;
+        }
+        .section:nth-child(odd) {
+            background-color: blue;
+        }
+
+        .container {
+            width: 1200px;
+            background-color: orange;
+            margin: 0 auto;
+        }
+
+        .container--fluid {
+            background-color: yellowgreen;
+            max-width: 1800px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .container--fluid {
+                width: 1200px;
+            }
+        }
+
+        .bg--transparent {
+            background-color: transparent;
+        }
+
+    </style>
+
+    <div class="section">
+        <div class="container">1</div>
+    </div>
+
+    <div class="section">
+        <div class="container container--fluid">
+            
+            <div class="container bg--transparent">2</div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">3</div>
+    </div>
+
+
+</body>
+</html>
