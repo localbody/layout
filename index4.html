@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- для моб девайсов будет псевдо-адаптив, гугл и яндекс не защитают это за версию для мобильника  -->
+    <!-- <meta name="viewport" content="width=1200">  -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Document</title>
 </head>
 <body>
@@ -19,6 +23,9 @@
             line-height: 5em;
 
             color: white;
+
+            /* для псевдо-адаптива */
+            /* min-width: 1200px; */
         }
 
         .section {
@@ -33,7 +40,11 @@
         }
 
         .container {
-            width: 1200px;
+
+            /* width: 1200px;  */
+
+            max-width: 1200px; 
+
             background-color: orange;
             margin: 0 auto;
         }
@@ -41,18 +52,51 @@
         .container--fluid {
             background-color: yellowgreen;
             max-width: 1800px;
-            width: 100%;
+            /* width: 100%; */
+
+            position: relative;
+
+            overflow: hidden;
         }
 
         @media screen and (max-width: 1200px) {
             .container--fluid {
-                width: 1200px;
+                /* width: 1200px; */
             }
         }
 
         .bg--transparent {
             background-color: transparent;
         }
+
+        .square {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: absolute;
+
+            width: 50px;
+            height: 50px;
+            background-color: black;
+        }
+        
+        @media screen and (max-width: 1300px) {
+            .square {
+                display: none;
+            }
+        }
+
+        .square--left-top {
+            top: 0;
+            left: 0;
+        }
+
+        .square--right-bottom {
+            right: 0;
+            bottom: 0;
+        }
+
 
     </style>
 
@@ -62,7 +106,8 @@
 
     <div class="section">
         <div class="container container--fluid">
-            
+            <div class="square square--left-top"><span>01</span></div>
+            <div class="square square--right-bottom"><span>02</span></div>
             <div class="container bg--transparent">2</div>
 
         </div>
